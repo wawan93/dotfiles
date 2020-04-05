@@ -80,6 +80,7 @@ plugins=(
     docker
     kubectl
     golang
+    tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,3 +122,6 @@ alias ll="ls -lah"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH=$HOME/go/bin:$PATH
+
+eval $(thefuck --alias)
