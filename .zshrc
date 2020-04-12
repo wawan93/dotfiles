@@ -125,3 +125,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH=$HOME/go/bin:$PATH
 
 eval $(thefuck --alias)
+
+source "$HOME/gruvbox/gruvbox_256palette.sh"

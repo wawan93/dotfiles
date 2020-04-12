@@ -66,17 +66,13 @@ Plug 'xolox/vim-session'
 " Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
-"" Color
-Plug 'tomasr/molokai'
 
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
 
 " go
-"" Go Lang Bundle
-Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
-
+Plug 'fatih/vim-go'
 
 " html
 "" HTML Bundle
@@ -226,7 +222,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'gruvbox'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
@@ -730,3 +726,8 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
 highlight Pmenu ctermbg=grey guibg=grey
+
+if filereadable(expand("~/gruvbox/colors/gruvbox.vim"))
+  source ~/gruvbox/colors/gruvbox.vim
+endif
+
